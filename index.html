@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="robots" content="noindex,nofollow">
+<title>Business Process Automation · Carun Advisory</title>
+<meta name="description" content="Business Process Automation using AI and modern digital tools. Scale your work, not your headcount. An interactive presentation by Carun Advisory.">
+<meta property="og:title" content="Business Process Automation · Carun Advisory">
+<meta property="og:description" content="Scale your work, not your headcount. An interactive presentation.">
+<meta property="og:image" content="assets/img/og.jpg">
+<link rel="preload" href="assets/fonts/cormorant-garamond-v21-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a class="brand" href="#/1" aria-label="Carun Advisory, first slide"><img src="assets/img/logo.png" alt="Carun Advisory" width="104" height="58"></a>
+  <div class="counter" aria-live="polite"><span id="cur">01</span><i>/</i><span id="tot">14</span></div>
+  <button class="icon-btn" id="ovBtn" aria-label="Slide overview"><svg viewBox="0 0 24 24" width="20" height="20"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+</header>
+
+<main id="deck">
+
+<!-- 1 TITLE -->
+<section class="slide s-title" data-title="Business Process Automation">
+ <div class="inner">
+  <p class="eyebrow rv">Carun Advisory · Business Process Automation</p>
+  <h1 class="rv">Scale your work,<br><em>not your headcount.</em></h1>
+  <p class="lede rv">AI and modern digital tools, built around how your business already works.</p>
+  <div class="handover rv" data-noswipe>
+    <p class="hint-label">Tap a task to hand it over</p>
+    <div class="chips" id="hoChips">
+      <button class="chip task">Chasing approvals</button>
+      <button class="chip task">Copying leads into Excel</button>
+      <button class="chip task">Typing invoices</button>
+      <button class="chip task">Reminder calls</button>
+      <button class="chip task">Monday reports</button>
+      <button class="chip task">Booking interviews</button>
+    </div>
+    <div class="engine" id="hoEngine">
+      <div class="engine-core"><span>Automated</span><b id="hoCount">0</b></div>
+      <svg class="engine-ring" viewBox="0 0 120 120"><circle cx="60" cy="60" r="54"/></svg>
+    </div>
+    <p class="ho-done" id="hoDone"><span class="d1">Hand them all over, or</span><span class="d2">That is the idea.</span> <span class="swipe-hint">swipe to begin →</span></p>
+  </div>
+ </div>
+</section>
+
+<!-- 2 PROBLEM -->
+<section class="slide" data-title="The problem">
+ <div class="inner split">
+  <div class="copy">
+   <p class="eyebrow rv">01 · The problem</p>
+   <h2 class="rv">Growth stalls in the gaps <em>between people.</em></h2>
+   <p class="lede rv">Most teams don't lack effort. They lose it to work that only moves information from one place to another.</p>
+  </div>
+  <div class="demo rv" data-noswipe>
+   <p class="hint-label">Tap each card to see what it really costs</p>
+   <div class="flipgrid">
+    <button class="flip" aria-pressed="false"><span class="f-front"><i class="ping">Reminder</i><b>Manual follow-ups</b><small>"Did anyone call them back?"</small></span><span class="f-back"><b>Leads go cold</b><small>while someone remembers to call back.</small></span></button>
+    <button class="flip" aria-pressed="false"><span class="f-front"><i class="ping">Ctrl+C</i><b>Copy-paste</b><small>Form → Excel → WhatsApp → email</small></span><span class="f-back"><b>Typed three times,</b><small>wrong at least once.</small></span></button>
+    <button class="flip" aria-pressed="false"><span class="f-front"><i class="ping">v7_final</i><b>Spreadsheets</b><small>Report_FINAL_v7 (2).xlsx</small></span><span class="f-back"><b>Many versions of the truth,</b><small>none of them current.</small></span></button>
+    <button class="flip" aria-pressed="false"><span class="f-front"><i class="ping">Seen</i><b>Approval chasing</b><small>"Sir, any update on this?"</small></span><span class="f-back"><b>Work waits</b><small>in someone's inbox until they reply.</small></span></button>
+   </div>
+   <p class="flip-sum" id="flipSum">Each gap is small. Together, they set the speed limit on your growth.</p>
+  </div>
+ </div>
+</section>
+
+<!-- 3 WHY NOW -->
+<section class="slide" data-title="Why now">
+ <div class="inner split">
+  <div class="copy">
+   <p class="eyebrow rv">02 · Why now</p>
+   <h2 class="rv">The tools have <em>finally caught up.</em></h2>
+   <p class="lede rv">AI can now read, write and connect your systems, at a cost that suits growing businesses, not only large enterprises. Early adopters set the pace for everyone else.</p>
+  </div>
+  <div class="demo rv" data-noswipe>
+   <div class="seg" role="tablist" id="nowTabs">
+     <button role="tab" class="on" data-k="read">It reads</button><button role="tab" data-k="write">It writes</button><button role="tab" data-k="connect">It connects</button>
+   </div>
+   <div class="console" id="nowConsole" aria-live="polite"></div>
+   <p class="micro">Illustrative example. No real customer data.</p>
+  </div>
+ </div>
+</section>
+
+<!-- 4 WHAT WE OFFER -->
+<section class="slide" data-title="What we offer">
+ <div class="inner split">
+  <div class="copy">
+   <p class="eyebrow rv">03 · What we offer</p>
+   <h2 class="rv">We map the work, <em>then automate what slows you down.</em></h2>
+   <ul class="pillars rv">
+    <li><b>Map</b> how your processes really run</li>
+    <li><b>Find</b> what is worth automating first</li>
+    <li><b>Build</b> custom portals, CRMs and dashboards</li>
+    <li><b>Add</b> AI assistants around how you already work</li>
+   </ul>
+  </div>
+  <div class="demo rv" data-noswipe>
+   <div class="toggle-ba" id="baToggle" role="switch" aria-checked="false" tabindex="0">
+     <span class="t-opt t-b">By hand</span><span class="t-opt t-a">Automated</span><span class="t-knob"></span>
+   </div>
+   <p class="hint-label center">One new client enquiry</p>
+   <ol class="flow" id="baFlow"></ol>
+  </div>
+ </div>
+</section>
+
+<!-- 5 HOW WE WORK -->
+<section class="slide" data-title="How we work">
+ <div class="inner split">
+  <div class="copy">
+   <p class="eyebrow rv">04 · How we work</p>
+   <h2 class="rv">Five steps. <em>Weeks, not months.</em></h2>
+   <p class="lede rv">Small, visible steps, with working software in your hands early.</p>
+  </div>
+  <div class="demo rv" data-noswipe>
+   <div class="track" id="track">
+     <div class="track-line"><span id="trackFill"></span></div>
+     <button data-i="0" class="on"><i>1</i><span>Discover</span></button>
+     <button data-i="1"><i>2</i><span>Design</span></button>
+     <button data-i="2"><i>3</i><span>Build</span></button>
+     <button data-i="3"><i>4</i><span>Launch</span></button>
+     <button data-i="4"><i>5</i><span>Improve</span></button>
+   </div>
+   <div class="stage-card" id="stageCard" aria-live="polite"></div>
+   <p class="hint-label center">Tap a step, or swipe across the card</p>
+  </div>
+ </div>
+</section>
+
+<!-- 6 CARUN WORKSPACE -->
+<section class="slide s-wide" data-title="Case study · Carun Workspace">
+ <div class="inner split wide">
+  <div class="copy">
+   <p class="eyebrow rv">05 · Case study · Our own operations</p>
+   <h2 class="rv">Carun Workspace. <em>We run our firm on what we build.</em></h2>
+   <p class="lede rv">Tasks, approvals, hiring, client reviews, interviews and GST invoicing in one portal, with roles and permissions throughout. Live at <span class="mono">workspace.carunadvisory.com</span>.</p>
+   <p class="micro rv">Try it: every tab works, and the role button changes what you can open. Demo data only.</p>
+  </div>
+  <div class="demo rv" data-noswipe>
+   <div class="app" id="ws">
+    <div class="app-bar">
+      <span class="dots"><i></i><i></i><i></i></span>
+      <span class="app-title">Carun Workspace</span>
+      <button class="role" id="wsRole" aria-label="Switch role">Owner ▾</button>
+      <button class="bell" id="wsBell" aria-label="Notifications"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M6 16V11a6 6 0 1 1 12 0v5l2 2H4zM10 20a2 2 0 0 0 4 0" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><b id="wsBadge">0</b></button>
+    </div>
+    <div class="app-tabs" id="wsTabs" role="tablist">
+      <button class="on" data-t="tasks">Tasks</button><button data-t="approvals">Approvals</button><button data-t="hiring">Hiring</button><button data-t="review">Client review</button><button data-t="interviews">Interviews</button><button data-t="invoice">Invoices</button>
+    </div>
+    <div class="app-body" id="wsBody"></div>
+    <div class="toast" id="wsToast"></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- 7 NALAPAD ACADEMY CRM -->
+<section class="slide s-wide" data-title="Case study · Nalapad Academy">
+ <div class="inner split wide">
+  <div class="copy">
+   <p class="eyebrow rv">06 · Case study · Nalapad Academy, Bengaluru</p>
+   <h2 class="rv">Every admissions enquiry, <em>captured the moment it happens.</em></h2>
+   <p class="lede rv">A custom CRM for a Cambridge school. Leads from Google Ads, the Collect.chat chatbot, calls and web forms now arrive on their own, where they were once entered by hand.</p>
+  </div>
+  <div class="demo rv" data-noswipe>
+   <p class="hint-label">Tap a source to send an enquiry</p>
+   <div class="sources" id="crmSrc">
+     <button data-s="Google Ads">Google Ads</button><button data-s="Chatbot">Collect.chat</button><button data-s="Direct call">Direct call</button><button data-s="Web form">Web form</button>
+   </div>
+   <div class="pipes"><svg viewBox="0 0 400 70" preserveAspectRatio="none" id="crmPipes"><path d="M50 0 C50 40 200 30 200 70"/><path d="M150 0 C150 40 200 30 200 70"/><path d="M250 0 C250 40 200 30 200 70"/><path d="M350 0 C350 40 200 30 200 70"/></svg><span class="pulse" id="crmPulse"></span></div>
+   <div class="app light crm">
+     <div class="app-bar"><span class="app-title">Admissions CRM</span><span class="demo-tag">Demo data</span><span class="autocap" id="crmAuto">Auto-capture on</span></div>
+     <div class="kan" id="crmKan">
+       <div class="col"><h5>New <b>0</b></h5><div class="cards"></div></div>
+       <div class="col"><h5>Follow up <b>0</b></h5><div class="cards"></div></div>
+       <div class="col dim"><h5>Walk-in <b>0</b></h5><div class="cards"></div></div>
+     </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- 8 NALAPAD GROUP -->
+<section class="slide s-wide" data-title="Case study · Nalapad Group">
+ <div class="inner split wide">
+  <div class="copy">
+   <p class="eyebrow rv">07 · Case study · Nalapad Group</p>
+   <h2 class="rv">One owner's dashboard, <em>across every business.</em></h2>
+   <p class="lede rv">A school, hotels in Bangalore and Mangalore, two cafés, around 100 acres of plantations and a landscaping firm, in one view. Built as a working demo; a group ERP is the direction.</p>
+  </div>
+  <div class="demo rv" data-noswipe>
+   <div class="app light grp">
+     <div class="app-bar"><span class="app-title">Nalapad Group · Owner's view</span><span class="demo-tag">Demo data</span></div>
+     <div class="app-tabs" id="grpTabs"><button class="on" data-g="group">Group</button><button data-g="school">School</button><button data-g="hotels">Hotels</button><button data-g="cafes">Cafés</button><button data-g="plant">Plantations</button><button data-g="green">Landscaping</button></div>
+     <div class="app-body" id="grpBody"></div>
+     <button class="wa-btn" id="grpWa">Daily WhatsApp summary</button>
+     <div class="wa-sheet" id="grpWaSheet" aria-live="polite"></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- 9 VOLTRIX -->
+<section class="slide s-wide" data-title="Upcoming · Voltrix EV">
+ <div class="inner split wide">
+  <div class="copy">
+   <p class="eyebrow rv"><span class="badge">Upcoming</span> 08 · Voltrix EV</p>
+   <h2 class="rv">An EV charging network, <em>run from one app.</em></h2>
+   <p class="lede rv">Customer app and platform for a planned network of around 400 charging stations across India, integrated with Zetwerk's charging hardware and CMS.</p>
+   <ul class="ticks d-only rv">
+     <li>Live charger status from the CMS</li><li>Wallet payments and automatic refunds</li><li>Amenities: café, massage chairs</li><li>Admin and operator dashboards, corporate website</li>
+   </ul>
+  </div>
+  <div class="demo rv" data-noswipe>
+   <div class="phone" id="vx">
+     <div class="notch"></div>
+     <div class="ph-screen">
+       <div class="ph-top"><b>Voltrix</b><span class="wallet" id="vxWallet">Wallet ₹0</span></div>
+       <div class="map" id="vxMap">
+         <svg viewBox="0 0 300 300" class="roads" preserveAspectRatio="xMidYMid slice"><path d="M0 80 Q120 60 300 110M40 0 Q70 160 30 300M0 210 Q160 190 300 240M200 0 Q170 150 230 300M110 0 Q140 120 120 300"/></svg>
+       </div>
+       <div class="sheet" id="vxSheet"></div>
+     </div>
+   </div>
+   <p class="micro center">Concept screens. Stations and amounts are demo data.</p>
+   <ul class="ticks m-only"><li>Live charger status from the CMS</li><li>Wallet payments and automatic refunds</li><li>Amenities: café, massage chairs</li><li>Admin and operator dashboards, corporate website</li></ul>
+  </div>
+ </div>
+</section>
+
+<!-- 10 CLEAN CART -->
+<section class="slide s-wide" data-title="Upcoming · Clean Cart">
+ <div class="inner split wide">
+  <div class="copy">
+   <p class="eyebrow rv"><span class="badge">Upcoming</span> 09 · Clean Cart</p>
+   <h2 class="rv">Three people. <em>Six hundred homes.</em></h2>
+   <p class="lede rv">A custom platform for a specialised car-cleaning subscription service. A team of just 3 will run an apartment community of 600+ homes, using AI and digital tools.</p>
+   <p class="micro rv">Shown below: how the platform is designed to work. A concept, not a delivered product.</p>
+  </div>
+  <div class="demo rv" data-noswipe>
+   <div class="app cc">
+     <div class="app-bar"><span class="app-title">Clean Cart · Concept</span><span class="demo-tag dark">Demo</span></div>
+     <div class="app-tabs" id="ccTabs"><button class="on" data-c="sched">Auto-schedule</button><button data-c="proof">Photo proof</button><button data-c="renew">Renewals</button></div>
+     <div class="app-body" id="ccBody"></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- 11 BENEFITS -->
+<section class="slide" data-title="Benefits">
+ <div class="inner split">
+  <div class="copy">
+   <p class="eyebrow rv">10 · What changes</p>
+   <h2 class="rv">Grow the business. <em>Not the busywork.</em></h2>
+   <p class="lede rv">Drag the slider to grow your business and watch the same work done two ways.</p>
+  </div>
+  <div class="demo rv" data-noswipe>
+   <label class="slider-lab" for="growth">Volume of work <b id="growthLab">Today</b></label>
+   <input type="range" id="growth" min="1" max="5" step="1" value="1">
+   <div class="lanes">
+     <div class="lane manual"><h5>By hand</h5><div class="ppl" id="pplM"></div><div class="queue" id="qM"></div><p id="noteM">The team keeps up.</p></div>
+     <div class="lane auto"><h5>Automated</h5><div class="ppl" id="pplA"></div><div class="queue" id="qA"></div><p id="noteA">The team keeps up.</p></div>
+   </div>
+   <div class="benefits" id="benefits">
+     <button class="on" data-b="0">Time back</button><button data-b="1">Fewer errors</button><button data-b="2">Faster client response</button><button data-b="3">Live data</button><button data-b="4">Growth without headcount</button>
+   </div>
+   <p class="ben-cap" id="benCap" aria-live="polite"></p>
+   <p class="micro">Illustrative, not a forecast.</p>
+  </div>
+ </div>
+</section>
+
+<!-- 12 SELF ASSESSMENT -->
+<section class="slide" data-title="Your automation map">
+ <div class="inner split">
+  <div class="copy">
+   <p class="eyebrow rv">11 · Your turn</p>
+   <h2 class="rv">Which of your processes <em>can we automate?</em></h2>
+   <p class="lede rv">Pick your teams and what slows them down. We'll sketch your automation map.</p>
+  </div>
+  <div class="demo rv" data-noswipe>
+   <div class="quiz" id="quiz">
+     <p class="q-step"><b>1</b> Your teams</p>
+     <div class="chips sm" id="qDept"></div>
+     <p class="q-step"><b>2</b> What slows them down</p>
+     <div class="chips sm" id="qPain"></div>
+     <button class="cta mag" id="qGo" disabled>Show my automation map</button>
+   </div>
+   <div class="map-out" id="qOut" aria-live="polite"></div>
+  </div>
+ </div>
+</section>
+
+<!-- 13 ENGAGEMENT -->
+<section class="slide" data-title="Ways to work with us">
+ <div class="inner split">
+  <div class="copy">
+   <p class="eyebrow rv">12 · Ways to work with us</p>
+   <h2 class="rv">Start small, <em>or go all the way.</em></h2>
+   <p class="lede rv">Where are you today?</p>
+   <div class="seg rv" id="engQ" data-noswipe><button data-e="0">Not sure where to start</button><button data-e="1">I know the problem</button><button data-e="2">I want to keep going</button></div>
+  </div>
+  <div class="demo rv" data-noswipe>
+   <div class="eng" id="eng">
+    <article data-e="0"><span class="n">01</span><h3>Automation audit</h3><p>We map how work moves through your business and hand you a prioritised automation plan.</p><ul><li>Process mapping with your team</li><li>What to automate first, and why</li><li>A clear plan you can act on</li></ul></article>
+    <article data-e="1"><span class="n">02</span><h3>Single build</h3><p>One system, done properly: a portal, CRM, dashboard or AI assistant.</p><ul><li>Designed around your workflow</li><li>Built, tested and launched</li><li>Your team trained to use it</li></ul></article>
+    <article data-e="2"><span class="n">03</span><h3>Ongoing automation partner</h3><p>We keep finding and building the next thing to automate as you grow.</p><ul><li>A standing roadmap</li><li>Continuous improvements</li><li>Senior counsel on tech decisions</li></ul></article>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- 14 CLOSE -->
+<section class="slide s-close" data-title="Let's talk">
+ <div class="inner">
+  <img class="close-logo rv" src="assets/img/logo.png" alt="Carun Advisory" width="200" height="112" loading="lazy">
+  <h2 class="rv">Let's find what your business can <em>stop doing by hand.</em></h2>
+  <div class="ask rv" data-noswipe>
+    <label for="askIn">One thing your team does by hand every week</label>
+    <div class="ask-row"><input id="askIn" type="text" placeholder="e.g. Chasing payment reminders" maxlength="140" enterkeyhint="send"><button class="cta mag" id="askGo">Email us</button></div>
+  </div>
+  <div class="contacts rv">
+    <a class="mag" href="mailto:eeshan@carunadvisory.com"><small>Eeshan Arun</small>eeshan@carunadvisory.com</a>
+    <a class="mag" href="mailto:nayythan@carunadvisory.com"><small>Nayythan M Carvalho</small>nayythan@carunadvisory.com</a>
+    <a class="mag" href="tel:+917259451504"><small>Call</small>+91 72594 51504</a>
+    <a class="mag" href="https://carunadvisory.com" target="_blank" rel="noopener"><small>Web</small>carunadvisory.com</a>
+  </div>
+  <p class="tagline rv">Strategic counsel. Intelligent execution.</p>
+ </div>
+</section>
+
+</main>
+
+<nav class="bottombar" aria-label="Slide navigation">
+  <button class="nav-btn" id="prev" aria-label="Previous slide"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
+  <div class="progress" id="progress" role="progressbar" aria-valuemin="1" aria-valuemax="14"><span id="progFill"></span></div>
+  <button class="nav-btn next" id="next" aria-label="Next slide"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
+</nav>
+
+<div class="more-cue" aria-hidden="true">Scroll for more ↓</div>
+<div class="overview" id="overview" aria-hidden="true">
+  <div class="ov-head"><img src="assets/img/logo.png" alt="" width="90" height="50"><button class="icon-btn" id="ovClose" aria-label="Close overview">✕</button></div>
+  <div class="ov-grid" id="ovGrid"></div>
+</div>
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+<script src="assets/app.js" defer></script>
+</body>
+</html>
